@@ -57,7 +57,7 @@ public class RequestAccessFilter extends GenericFilterBean {
 				HttpServletResponse response = (HttpServletResponse) arg1;
 				response.setContentType(MediaType.APPLICATION_JSON);
 				response.setStatus(401);
-				response.getWriter().write("{\"error\":\"Unauthorized access\"");
+				response.getWriter().write("{\"error\":\"Unauthorized access\"}");
 			}
 		}
 
